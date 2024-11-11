@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Monroe';
+    src: url('../Manrope/static/Manrope-Regular.ttf') format('truetype'),
+    url('../Manrope/static/Monroe.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    overflow-x: hidden; /* Prevent horizontal scrolling for the entire page */
+}
+
+.card {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deal-contents {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.heart, .heart1, .heart2, .heart3, .heart4 {
+    position: absolute;
+    right: 10px; /* Adjust this value as needed */
+    top: 10px; /* Adjust this value as needed */
+}
+
+.deal-contents-items {
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+    background-color: #f8f9fa;
+    padding: 1rem;
+    width: 50rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    position: relative; /* Ensure absolute positioning of heart icon works */
+}
+
+.deal-contents-items img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.deal1 {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.dtls1, .dtls {
+    margin-left: 4rem;
+}
+
+.mess {
+    width: 35px;
+}
+
+.hot-deals {
+    width: 250px;
+    border-radius: 1rem;
+    border: 3px solid rgb(165, 45, 93);
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+    margin: 1rem 0;
+    font-family: 'Monroe', 'Courier New', Courier, monospace;
+}
+
+.content-text {
+    margin: 1rem 0;
+    font-family: 'Monroe', 'Courier New', Courier, monospace;
+}
+
+.btn {
+    background-color: rgb(165, 45, 93);
+    width: 10rem;
+    padding: 1rem;
+    color: white;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-btn {
+    text-align: center;
+}
+
+.advert {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin: 0 auto;
+    padding: 2rem;
+    width: 80%;
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgba(165, 45, 93, 0.3); /* Using rgba for transparency */
+    color: black;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+}
+
+.fone-logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.advert-details {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.download-option {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+
+#apple, #google {
+    width: 180px;
+    border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+    .advert {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center;
+    }
+
+    .fone-logo, .advert-details {
+        width: 100%;
+    }
+
+    #apple, #google {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .advert {
+        padding: 1rem;
+    }
+
+    #apple, #google {
+        width: 120px;
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="../Styles/Checkout.css"> <!-- Ensure this path is correct -->
+</head>
+<body>
+
+<div class="whole-check">
+  <h2 class="co">Check Out</h2>
+  <hr class="lb" />
+  
+  <div class="transfer">
+    <div class="trf-sec">
+      <div class="trf-img">
+        <img src="path/to/checked.png" alt="" />
+      </div>
+      <p>Shipping Information -------------------</p>
+    </div>
+
+    <div class="trf-sec">
+      <div class="trf-img">
+        <img src="path/to/two.png" alt="" />
+      </div>
+      <p class="pt">Payment Details -------------------</p>
+    </div>
+
+    <div class="trf-sec">
+      <div class="trf-img">
+        <img src="path/to/three.png" alt="" />
+      </div>
+      <p class="pt">Complete Order -------------------</p>
+    </div>
+  </div>
+
+  <h2 class="si">Shipping Information</h2>
+  <div class="form">
+    <div class="form-main">
+      <div class="form1">
+        <div class="form1-sec">
+          <div class="text-f">First Name</div>
+          <input type="text" id="name" placeholder="Enter your first name" />
+        </div>
+        <div class="form1-sec">
+          <div class="text-f">Last Name</div>
+          <input type="text" id="lname" placeholder="Enter your last name" />
+        </div>
+      </div>
+
+      <div class="form2">
+        <div class="form1-sec">
+          <div class="text-f">Email</div>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="form1-sec">
+          <div class="text-f">Phone Number</div>
+          <input type="number" id="pn" placeholder="Enter your phone number" />
+        </div>
+      </div>
+
+      <div class="form3">
+        <div class="text-f">Address</div>
+        <textarea id="add" cols="50" rows="4" placeholder="Enter your address details"></textarea>
+      </div>
+
+      <div class="form4">
+        <div class="form2-sec">
+          <div class="text-f">City</div>
+          <input type="text" id="cty" placeholder="City" />
+        </div>
+        <div class="form2-sec">
+          <div class="text-f">State/Province</div>
+          <input type="text" id="pro" placeholder="City / Province" />
+        </div>
+        <div class="form2-sec">
+          <div class="text-f">Country</div>
+          <input type="text" id="ctry" placeholder="Country" />
+        </div>
+      </div>
+
+      <div class="form5">
+        <div class="form3-sec">
+          <div class="text-f">Postal Code</div>
+          <input type="text" id="pst" placeholder="Zip code" />
+        </div>
+        <div class="text-g">
+          <p><img src="path/to/checked.png" alt="" /> I want to have an account with this information</p>
+        </div>
+      </div>
+
+      <div class="btn-t">
+        <a href="checkout2.html">
+          <button class="btn3">Proceed to Payment</button>
+        </a>
+      </div>
+      <div class="btn-t">
+        <a href="cart.html">
+          <button class="btn3">Return to Cart</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="side-pay">
+      <h2>Order</h2>
+      <div class="item-box">
+        <!-- Replace with server-side rendering or manual input for items -->
+        <div class="item">
+          <img id="maca" src="path/to/item-image.png" alt="" />
+          <p>Item Name</p>
+          <p>256GB/8-Core GPU</p>
+          <select id="options">
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+          </select>
+        </div>
+      </div>
+      <div class="summary4">
+        <div class="sum-head2">
+          <div class="sum-kids1">
+            <p>Subtotal:</p>
+            <p>Shipping fee:</p>
+            <p>Taxes:</p>
+          </div>
+          <div class="sum-kid3">
+            <p>$100</p> <!-- Replace with actual subtotal -->
+            <p>$10.50</p>
+            <p>$0.00</p>
+          </div>
+        </div>
+        <hr />
+        <div class="tt-1">
+          <p class="total5">Total: </p>
+          <div class="t6">$110.50</div> <!-- Replace with actual total calculation -->
+        </div>
+        <p class="return-policy1">Free 30-day return with ease</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="advert">
+    <div class="fone-logo">
+      <img src="../Images/pcs/topsell.png" alt="" />
+    </div>
+    <div class="advert-details">
+      <h2>Get more on our app</h2>
+      <p>Unlock exclusive features, save searches, track inquiries, and more with our app</p>
+      <p>Available on iOS and Android</p>
+      <div class="download-option">
+        <div class="apple-version">
+          <img id="apple" src="../Images/pcs/ap.jpeg" alt="" />
+        </div>
+        <div class="ios-version">
+          <img id="google" src="../Images/pcs/gp.jpeg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../Javascript/Checkout.js"></script>
+</body>
+</html>

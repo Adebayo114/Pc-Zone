@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../Images/icons/logo.png" />
+    <title>Pc Zone ✔</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Styles/index.css">
+    <link rel="stylesheet" href="../Styles//search-content.css">
+    <link rel="stylesheet" href="../Styles/Content.css">
+</head>
+
+<body>
+    <!-- NavBar Section -->
+    <div class="nav">
+        <img src="../Images/icons/134216_menu_lines_hamburger_icon.png" alt="Menu-icon" class="menu-icon"
+            onclick="toggleMenu()" />
+        <h2 class="ts">Top Sell</h2>
+        <div class="nav-center">
+            <div class="search" onclick="openSearch()">
+                <img id="s-imge" src="../Images/icons/search.png" alt="Search-icon" />
+                <input type="search" placeholder="What product are you buying" id="srch" />
+            </div>
+        </div>
+        <div class="nav-icons">
+            <div class="nav-icons-kids">
+                <a href="cart.html">
+                    <img src="../Images/icons/shopping-cart.png" alt="Shopping-icon" />
+                </a>
+            </div>
+            <div class="nav-icons-kids">
+                <img src="../Images/icons/heart.png" alt="Heart-icon" />
+            </div>
+            <div class="nav-icons-kids">
+                <a href="signup.html"><img src="../Images/icons/user (2).png" alt="User-icon" /></a>
+            </div>
+            <div class="nav-icons-kids">
+                <img src="../Images/icons/brand-identity (1).png" alt="Brand-icon" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Overlay -->
+    <div id="menuOverlay" class="menu-overlay" onclick="toggleMenu()">
+        <div class="menu-dropdown" onclick="event.stopPropagation()">
+            <a href="index.html" class="menu-item">Home</a>
+            <a href="cart.html" class="menu-item">Cart</a>
+            <a href="#" class="menu-item">Sign Up/Login</a>
+            <a href="#" class="menu-item">Products</a>
+        </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div id="searchOverlay" class="search-overlay" onclick="closeSearch()">
+        <div class="search-modal" onclick="event.stopPropagation()">
+            <input type="search" placeholder="What product are you buying?" autofocus />
+            <button onclick="closeSearch()">Close</button>
+        </div>
+    </div>
+
+    <!-- Carousel Section -->
+    <div class="container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../Images/slide images/slidesimg (1).jpeg" alt="First slide" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/slide images/slidesimg (2).jpeg" alt="Second slide" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/slide images/slidesimg (3).jpeg" alt="Third slide" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/slide images/slidesimg (4).jpeg" alt="Fourth slide" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Images/slide images/slidesimg (5).jpeg" alt="Fifth slide" class="d-block w-100">
+                </div>
+            </div>
+        </div>
+        <h1 class="f-text">Buy Your Next Laptop</h1>
+    </div>
+
+    <!-- Search Content Wrapper -->
+    <div class="content-page">
+        <!-- Navigation Links -->
+        <div class="content-nav">
+            <a href="">
+                <div class="content-nav-kids">Macbook</div>
+            </a>
+            <a href="">
+                <div class="content-nav-kids">Dell</div>
+            </a>
+            <a href="">
+                <div class="content-nav-kids">Lenovo</div>
+            </a>
+            <a href="">
+                <div class="content-nav-kids">Samsung</div>
+            </a>
+            <a href="">
+                <div class="content-nav-kids">Asus</div>
+            </a>
+            <a href="">
+                <div class="content-nav-kids">Hp</div>
+            </a>
+            <a href="">
+                <div class="content-nav-kids">Toshiba</div>
+            </a>
+        </div>
+
+        <!-- Divider -->
+        <hr />
+
+        <!-- Search Form -->
+        <div class="srch-form">
+            <div class="srch-kid">
+                <img id="s-image" src="../images/icons/search (1).png" alt="Search Icon">
+                <input type="search" id="srch" placeholder="What product are you buying">
+            </div>
+            <div class="srch-btn">Search</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Hot Deals Section -->
+        <div class="deal1">
+            <h2 class="dtls1">Hot Deals</h2>
+            <img id="mess" src="../Images/icons/messenger .png" alt="messenger">
+        </div>
+        <hr>
+        <div class="deal-contents row">
+            <!-- Hot Deals Item 1 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/pc01.jpeg" alt="Dell Latitude">
+                <img class="heart" src="../Images/icons/heart.png" alt="favorite">
+                <div class="content-text">
+                    <p>Dell Latitude 3420-15'</p>
+                    <p>Gen Intel Core i5</p>
+                </div>
+                <p class="price">$2500</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+            <!-- Hot Deals Item 2 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/pro 16.jpeg" alt="HP Pavilion">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Apple MacBook Pro 16'</p>
+                    <p>1TB - 10 Cores M1 Max</p>
+                </div>
+                <p class="price">$3670</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+            <!-- Hot Deals Item 3 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/samsung book3.jpeg" alt="Lenovo IdeaPad">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Samsung Gallery Book 3 Pro</p>
+                    <p>Gen Intel Core i5</p>
+                </div>
+                <p class="price">$943</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+            <!-- Hot Deals Item 4 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/dell 3420-14.jpeg" alt="Lenovo IdeaPad">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Dell Latitude 3420-14'</p>
+                    <p>Gen Intel Core i5</p>
+                </div>
+                <p class="price">$732</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+            <!-- Hot Deals Item 5 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/hp end.jpeg" alt="Lenovo IdeaPad">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Hp Latitude 3420-14'</p>
+                    <p>Gen Intel Core i5</p>
+                </div>
+                <p class="price">$680</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+        </div>
+
+        <!-- MacBook Section -->
+        <h2 class="dtls">Macbook Laptops</h2>
+        <hr>
+        <div class="deal-contents row">
+            <!-- MacBook Item 1 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/pro 14.jpeg" alt="MacBook Pro">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Apple MacBook Pro 14"</p>
+                    <p>18GB-14-core GPU-512 SSD</p>
+                </div>
+                <p class="price">$1943</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+
+            <!-- MacBook Item 2 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/pro 16.jpeg" alt="MacBook Air">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Apple MacBook Pro 16'</p>
+                    <p>1TB - 10 Cores M1 Max</p>
+                </div>
+                <p class="price">$3,670</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+            <!-- MacBook Item 3 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/Air 13.jpeg" alt="MacBook Air">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Apple MacBook Air 13'</p>
+                    <p>256GB SSD/ 8-Core GPU</p>
+                </div>
+                <p class="price">$1,656</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+            <!-- MacBook Item 4 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs//pro 16.2.jpeg" alt="MacBook Air">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Apple MacBook Pro 16.2"</p>
+                    <p>1TB - 10 Cores - M1 Max</p>
+                </div>
+                <p class="price">$3,732</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+
+            <!-- MacBook Item 5 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/pc01.jpeg" alt="MacBook Pro">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Apple MacBook Pro 16'</p>
+                    <p>1TB - 10 Cores M1 Max</p>
+                </div>
+                <p class="price">$659</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+        </div>
+
+        <!-- Dell Section -->
+        <h2 class="dtls">Dell Laptops</h2>
+        <hr>
+        <div class="deal-contents row">
+            <!-- Dell Item 1 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/dell 7370.jpeg" alt="Dell Latitude">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>DELL Latitude 7370</p>
+                    <p>Intel Core 15 8GB RAM, SSD</p>
+                </div>
+                <p class="price">$543</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+            <!-- Dell Item 2 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/dell 3190.jpeg" alt="Dell XPS">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>DELL LATITUDE 3190 2in1 X360</p>
+                    <p>8GB RAM, 128GB SSD</p>
+                </div>
+                <p class="price">$370</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+            <!-- Dell Item 3 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/dell 7490.jpeg" alt="Dell Gaming G5">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>DELL Latitude 7490 TOUCH</p>
+                    <p>1TB SSD/16GB RAM</p>
+                </div>
+                <p class="price">$1,156</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+            <!-- Dell Item 4 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/dell m18.jpeg" alt="Dell Gaming G5">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>DELL Alienware M18 R1</p>
+                    <p>4TB/64GB 19 13th Gen</p>
+                </div>
+                <p class="price">$5,932</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+
+
+            <!-- Dell Item 5 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/dell end.jpeg" alt="Dell Gaming G5">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Dell Latitude 3420-14'</p>
+                    <p>Gen Intel Core i5</p>
+                </div>
+                <p class="price">$659</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+        </div>
+
+
+        <!-- Lenovo Section -->
+        <h2 class="dtls">Lenovo Laptops</h2>
+        <hr>
+        <div class="deal-contents row">
+            <!-- Lenovo Item 1 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/len 1280p1.jpeg" alt="Dell Latitude">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Lenovo ThinkPad P16s G1</p>
+                    <p>i7-1280P 1.80 GHz</p>
+                </div>
+                <p class="price">$1,543</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+            <!--Lenovo Item 2 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/len intel.jpeg" alt="Dell XPS">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Lenovo Ideapad Intel</p>
+                    <p>256 SSD 4GB RAM</p>
+                </div>
+                <p class="price">$1,170</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+            <!-- Lenovo Item 3 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/len v14.jpeg" alt="Dell Gaming G5">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Lenovo V14 AMD RYZEN</p>
+                    <p>12GB RAM 1TB HDD</p>
+                </div>
+                <p class="price">$966</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+            <!-- Lenovo Item 4 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/len X1.jpeg" alt="Dell Gaming G5">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Lenovo Thinkpad X1</p>
+                    <p>Gen 11 Core 17-1365u</p>
+                </div>
+                <p class="price">$5,932</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+
+
+
+            <!-- Lenovo Item 5 -->
+            <div class="deal-contents-items col-md-4">
+                <img class="hot-deals" src="../Images/pcs/dell end.jpeg" alt="Dell Gaming G5">
+                <img class="heart" src="../images/icons/heart (2).png" alt="favorite">
+                <div class="content-text">
+                    <p>Dell Latitude 3420-14'</p>
+                    <p>Gen Intel Core i5</p>
+                </div>
+                <p class="price">$659</p>
+                <a href="Html\Cart.html"><button class="btn cart-btn">ADD TO CART</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+
+        <div class="footer">
+          <div class="footr-nav">
+            <a href="#"><div class="footer-nav">Home</div></a>
+            <a href="#"><div class="footer-nav">Blog</div></a>
+            <a href="#"><div class="footer-nav">About</div></a>
+            <a href="#"><div class="footer-nav">Contact Us</div></a>
+          </div>
+
+          <h3 class='ts'>Top Sell</h3>
+
+          <div class="footer-icons">
+            <div class="footer-icons-img">
+                <img src="../Images/icons/twitter (2).png" alt="twitter" />
+            </div>
+
+            <div class="footer-icons-img">
+                <img src="../Images/icons/apple-logo.png" alt="apple" />
+            </div>
+
+            <div class="footer-icons-img">
+                <img src="../Images/icons/facebook-logo (1).png" alt="facebook" />
+            </div>
+
+            <div class="footer-icons-img">
+                <img src="../Images/icons/instagram (1).png" alt="insta" />
+            </div>
+
+            <div class="footer-icons-img">
+                <img src="../Images/icons/youtube.png" alt="youtube" />
+            </div>
+
+          </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript and Bootstrap -->
+    <script src="../Javascript/NavBar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

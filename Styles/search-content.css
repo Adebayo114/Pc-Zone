@@ -1,0 +1,151 @@
+/* Base styles */
+.f-text {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+
+.content-page {
+    padding: 30px;
+    padding-bottom: 1rem;
+    background-color: rgb(19, 18, 18);
+    color: white;
+    max-width: 40%;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.content-nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.content-nav-kids {
+    position: relative;
+    padding-bottom: 5px;
+    cursor: pointer;
+    /* we move */
+    margin: 0.5rem;
+}
+
+.content-nav-kids::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.content-nav-kids:hover::after {
+    transform: scaleX(1);
+}
+
+.srch-form {
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 0.2rem;
+    padding-right: 1rem;
+    padding-bottom: 0.3rem;
+    flex-wrap: wrap;
+}
+
+#s-image{
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+}
+
+.srch-kid {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+#srch {
+    height: 2rem;
+    text-decoration: none;
+    width: 100%;
+    border:solid white;
+    margin-left: 5px;
+}
+
+#srch::placeholder{
+    text-align: center;
+    border: none;
+}
+
+
+.srch-btn {
+    background-color: rgb(19, 18, 18);
+    width: 8rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.srch-btn:hover{
+    background-color: white;
+    color:black;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .content-page {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .content-nav-kids {
+        margin: 0.3rem;
+    }
+
+    #srch {
+        width: 100%;
+    }
+
+    .srch-btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .srch-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 576px) {
+    /* .content-nav {
+        flex-direction: ;
+    } */
+
+            .content-page{
+                margin-bottom: 4rem;
+            }
+    .srch-form {
+        padding: 0.1rem;
+    }
+
+    .srch-btn{
+        margin-left: -0.3px;
+    }
+}
