@@ -1,7 +1,7 @@
 <?php
 include("includes/header.php");
 
-if(isset($_SESSION['loggedIn'])){
+if(isset($_SESSION['loggedIn']) && isset($_SESSION['loggedInAdmin'])){
     ?>
         <script>window.location.href = 'index.php';</script>
     <?php

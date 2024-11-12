@@ -34,6 +34,7 @@ if(isset($_POST['signup_btn'])){
                 'first_name' => $first_name,
                 'last_name' => $last_name,
                 'email' => $email,
+                'user_type' => 'buyer',
                 'password' => password_hash($password, PASSWORD_DEFAULT)
             ];
 
@@ -68,14 +69,25 @@ if(isset($_POST['login_btn'])){
                 redirect('login.php', 'Invalid Login details', 'alert-danger');
             }
 
-            $_SESSION['loggedIn'] = true;
-            $_SESSION['loggedInUser'] = [
-                'user_id' => $row['id'],
-                'firstname' => $row['first_name'],
-                'lastname' => $row['last_name'],
-                'email' => $row['email'],
-            ];
-            header('Location: index.php');
+            if($row['user_type'] == 'buyer'){
+                $_SESSION['loggedIn'] = true;
+                $_SESSION['loggedInUser'] = [
+                    'user_id' => $row['id'],
+                    'firstname' => $row['first_name'],
+                    'lastname' => $row['last_name'],
+                    'email' => $row['email'],
+                ];
+                header('Location: index.php');
+            }elseif($row['user_type'] == 'admin'){
+                $_SESSION['loggedInAdmin'] = true;
+                $_SESSION['loggedInUser'] = [
+                    'user_id' => $row['id'],
+                    'firstname' => $row['first_name'],
+                    'lastname' => $row['last_name'],
+                    'email' => $row['email'],
+                ];
+                header('Location: admin/index.php');
+            }
 
         }else{
             redirect('login.php', 'Invalid login details', 'alert-danger');
